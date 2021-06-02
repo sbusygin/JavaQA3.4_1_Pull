@@ -27,7 +27,9 @@ public class FilmManager {
         int resultLength;
         if (filmsLine.length > howManyFilms) {
             resultLength = howManyFilms;
-        } else resultLength = filmsLine.length;
+        } else {
+            resultLength = filmsLine.length;
+        }
 
         Film[] result = new Film[resultLength];
         for (int i = 0; i < result.length; i++) {
