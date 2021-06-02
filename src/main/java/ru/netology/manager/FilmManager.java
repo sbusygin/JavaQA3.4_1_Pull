@@ -32,8 +32,8 @@ public class FilmManager {
         }
 
         Film[] result = new Film[resultLength];
-        for (int i = 0; i < result.length; i++) {
-            int index = result.length - i - 1;
+        for (int i = 0; i < resultLength; i++) {
+            int index = filmsLine.length - i - 1;
             result[i] = filmsLine[index];
         }
         return result;

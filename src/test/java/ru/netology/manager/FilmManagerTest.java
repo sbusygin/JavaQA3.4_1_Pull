@@ -24,7 +24,7 @@ class FilmManagerTest {
         manager.add(film3);
         manager.add(film4);
 
-        Film[] expected = new Film[]{film3, film2, film1};
+        Film[] expected = new Film[]{film4, film3, film2};
         Film[] result = manager.getAll();
         assertArrayEquals(expected, result);
     }
