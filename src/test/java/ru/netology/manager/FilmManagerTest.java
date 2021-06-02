@@ -39,4 +39,22 @@ class FilmManagerTest {
         Film[] result = manager.getAll();
         assertArrayEquals(expected, result);
     }
+
+    @Test
+    void getFilmsIfLineMin() {
+        manager.add(film1);
+        manager.add(film2);
+
+        Film[] expected = new Film[]{film2, film1};
+        Film[] result = manager.getAll();
+        assertArrayEquals(expected, result);
+    }
+
+    @Test
+    void getFilmsIfLineEmpty() {
+        Film[] expected = new Film[]{};
+        Film[] result = manager.getAll();
+        assertArrayEquals(expected, result);
+    }
+
 }
